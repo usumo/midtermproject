@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="showcase.html" class="active">Showcase</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content-wrapper">
+        <div class="text-content" style="flex-basis: 100%;">
+            <h2>Project Showcase</h2>
+            <p>Here are some mini-projects from the lab.</p>
+
+            <div class="showcase-section tablestyler-container">
+                <h3>Table Styler</h3>
+                <table id="mainTable">
+                    <thead>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                            <th>Header 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                        </tr>
+                        <tr>
+                            <td>Data 4</td>
+                            <td>Data 5</td>
+                            <td>Data 6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="controls">
+                    <button id="setWidth200">Width 200px</button>
+                    <button id="setWidth500">Width 500px</button>
+                    <button id="setBorder1">Border 1px</button>
+                    <button id="setBorder10">Border 10px</button>
+                    <button id="setBorder20">Border 20px</button>
+                    <button class="color-swatch" id="colorGreen" data-color="#C8E6C9"></button>
+                    <button class="color-swatch" id="colorBlue" data-color="#B3E5FC"></button>
+                    <button class="color-swatch" id="colorPurple" data-color="#D1C4E9"></button>
+                    <button id="resetButton">Reset</button>
+                </div>
+            </div>
+
+            <div class="showcase-section polaroid-container">
+                <h3>Polaroid Image</h3>
+                <div class="polaroid-wrapper">
+                    <div id="polaroid" class="polaroid">
+                        <img id="polaroid-image" src="images/fedor_gorst_main.jpg" alt="Polaroid 1">
+                        <p id="polaroid-caption" class="caption">Image 1 of 4</p>
+                    </div>
+                    <div class="polaroid-nav">
+                        <button id="prev-button">Previous</button>
+                        <button id="next-button">Next</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

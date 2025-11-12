@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewis Huang - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content-wrapper">
+        <div class="profile-card">
+            <div class="profile-img-container">
+                <img src="images/pepe.jpg" alt="A photo of me" class="profile-img" usemap="#profilemap">
+                <div class="profile-overlay">
+                    <span class="overlay-name">Lewis Huang</span>
+                </div>
+            </div>
+            
+            <map name="profilemap">
+                <area shape="poly" coords="40,20, 110,20, 120,90, 75,130, 30,90" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" alt="Face">
+            </map>
+
+            <h3>Lewis Huang</h3>
+            <p>
+                <strong>Email:</strong> 
+                <a href="mailto:yanghuang1504@gmail.com">yanghuang1504@gmail.com</a>
+            </p>
+            <p>
+                <strong>Website:</strong> 
+                <a href="https://www.google.com" target="_blank">Google.com</a>
+            </p>
+        </div>
+
+        <div class="text-content">
+            <h2>Welcome to My Personal Website</h2>
+            <p>
+                This is the homepage for my web programming lab assignments. Here you can find information about me, my hobbies, and my schedule. 
+            </p>
+            
+            <div class="canvas-container">
+                <button id="draw-button">I drew this</button>
+                <canvas id="bojackCanvas" width="800" height="450" style="display: none;"></canvas>
+            </div>
+            <h2>My Pool Idol</h2>
+            <p>
+                My pool idol is Shane Van Boening, a professional pool player from the United States. He is known for his incredible skills and consistency in the game, having won numerous championships and titles throughout his career. Shane's dedication to the sport and his ability to perform under pressure make him a true inspiration for aspiring pool players like myself.
+            </p>
+            <br><img src="images/svb.jpg" alt="Shane Van Boening" title="Shane Van Boening" style="max-width: 350px; border-radius: 8px; margin-top: 10px;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
